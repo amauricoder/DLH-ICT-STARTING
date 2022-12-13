@@ -11,56 +11,176 @@
       <p>This is the third paragraph. This means that we had a broken line just ahead.</p>
     <h2>This is the second title!</h2>
       <a href="https://www.google.com/">This is a link for google!</a>
-  </body>
-</html>
+
 <!-- shift + Ctrl + Slash to shortcut for comments -->
 
 
 
-<hr> <!-- Hr to make a horiyontal line -->
+  <hr> <!-- Hr to make a horiyontal line -->
 
 
-<blockquote cite="http://">
-  Blockquote para fazer uma citacao.
-</blockquote>
+  <blockquote cite="http://">
+    Blockquote para fazer uma citacao.
+  </blockquote>
 
-<summary>para fazer um sumario.</summary>
+  <summary>para fazer um sumario.</summary>
 
-<pre>estou aqui testando
-para ver como
-como vai funcionar
-a funcao pre</pre>
+  <pre>estou aqui testando
+  para ver como
+  como vai funcionar
+  a funcao pre</pre>
 
-<abbr title="Digital Learning Hub">DLH</abbr>
-<!-- Abbr - em title mostra o titulo e o DLH a abreviacao. O DLH eh mostrado sublinhado, passando o mouse em cima vemos o titlo -->
+  <abbr title="Digital Learning Hub">DLH</abbr>
+  <!-- Abbr - em title mostra o titulo e o DLH a abreviacao. O DLH eh mostrado sublinhado, passando o mouse em cima vemos o titlo -->
 
-<p>Aqui nos podemos utilizar a tag <mark>mark</mark> para deixar algo marcado.</p>
+  <p>Aqui nos podemos utilizar a tag <mark>mark</mark> para deixar algo marcado.</p>
 
-<p>Aqui usamos o SUP para deixar a letra pequenininha. Como em 1 <sup>iro</sup> </p>
-<p>Ou usamos SUB para deixar pequeno, mas embaixo. Como em H<sub>2</sub>0 </p>
+  <p>Aqui usamos o SUP para deixar a letra pequenininha. Como em 1 <sup>iro</sup> </p>
+  <p>Ou usamos SUB para deixar pequeno, mas embaixo. Como em H<sub>2</sub>0 </p>
 
-<hr>
+  <hr>
 
-<ul>
-  <li>1 item da lista</li>
-  <li> 2 item da lista</li>
-  <li>3 item da lista</li>
-</ul>
+  <ul>
+    <li>1 item da lista</li>
+    <li> 2 item da lista</li>
+    <li>3 item da lista</li>
+  </ul>
 
-<!-- Para especificar algo na lista' podemos colocar em <ol type ="Item a ser especificado"> Por exemplo - <ol type="I"> -->
+  <!-- Para especificar algo na lista' podemos colocar em <ol type ="Item a ser especificado"> Por exemplo - <ol type="I"> -->
 
-<ol>
-  <li>item da lista</li>
-  <li>item da lista</li>
-  <li>item da lista</li>
-</ol>
+  <ol>
+    <li>item da lista</li>
+    <li>item da lista</li>
+    <li>item da lista</li>
+  </ol>
 
 
-<p>Description list - utilizamos DL como principal e DD para itens</p>
-<p>My todo list:</p>
-<dl>
-  <dt>Home</dt>
-  <dd>Fix bike</dd>
-  <dd>Take kids</dd>
-  <dd>Sleep</dd>
-</dl>
+  <p>Description list - utilizamos DL como principal e DD para itens</p>
+  <p>My todo list:</p>
+  <dl>
+    <dt>Home</dt> <!--tag defines a term/name in a description list -->
+    <dd>Fix bike</dd>
+    <dd>Take kids</dd>
+    <dd>Sleep</dd>
+  </dl>
+
+  <hr>
+
+  <h2>Tables</h2>
+  <p>Isso é uma planilha. utilizamos table, th TABLE HEADER, tr TABLE ROW e td TABLE DATA</p><br>
+  <p>Aqui utilizaremos uma planilha sem nenhum complemento</p>
+  <table>
+    <caption>Planilha sem complementos</caption>
+    <tr>
+      <th>Linha 1</th>
+      <th>Linha 2</th>
+      <th>Linha 3</th>
+    </tr>
+    <tr>
+      <td>conteudo 1 - linha 1</td>
+      <td>conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 2 - linha 1</td>
+      <td>conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 3 - linha 1</td>
+      <td>conteudo 3 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+  </table>
+
+  <h2>Planilhas borda</h2>
+  <p>Para usar a planilha com borda utilizamos o table border ="numero"</p>
+  <table border ="1">
+    <caption>Planilha com borda</caption>
+    <tr>
+      <th>Linha 1</th>
+      <th>Linha 2</th>
+      <th>Linha 3</th>
+    </tr>
+    <tr>
+      <td>conteudo 1 - linha 1</td>
+      <td>conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 2 - linha 1</td>
+      <td>conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 3 - linha 1</td>
+      <td>conteudo 3 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+  </table>
+
+  <h2>aumentando linhas com colspan</h2>
+  <blockquote>Para mudar tamanho das linhas utilizamos colspan <br>
+     por exemplo, para aumentar o tamanho da linha em 2 <br>
+     devemos colocar = "2" na linha desejada<br>
+      *ver no codigo HTML o exemplo*</blockquote>
+  <table border ="1">
+    <caption>Planilha colspan</caption>
+    <tr>
+      <th>Linha 1</th>
+      <th>Linha 2</th>
+      <th>Linha 3</th>
+    </tr>
+    <tr>
+      <td>conteudo 1 - linha 1</td>
+      <td colspan ="2">conteudo 2 - linha 2</td>
+    </tr>
+    <tr>
+      <td>conteudo 2 - linha 1</td>
+      <td>conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 3 - linha 1</td>
+      <td>conteudo 3 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+  </table>
+
+<h2>Aumentando colunas com rowspan</h2>
+  <blockquote>
+    O principio é o mesmo que o colspan. <br>
+    colocar rowspan = "numero" dentro da coluna <br>
+    que voce deseja aumentar. Ex. >td rowspan ="2"> conteudo 2 - linha 2 <br>
+    aumentara a coluna da linha 2 em 2. <br>
+    *ver codigo html para exemplo*.
+  </blockquote>
+  <table border ="1">
+    <caption>Planilha rowspan</caption>
+    <tr>
+      <th>Linha 1</th>
+      <th>Linha 2</th>
+      <th>Linha 3</th>
+    </tr>
+    <tr>
+      <td>conteudo 1 - linha 1</td>
+      <td>conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 2 - linha 1</td>
+      <td rowspan = "2">conteudo 2 - linha 2</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+    <tr>
+      <td>conteudo 3 - linha 1</td>
+      <td>conteudo 3 - linha 3</td>
+    </tr>
+  </table>
+
+  <hr>
+
+
+
+</body>
+</html>
