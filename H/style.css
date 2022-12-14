@@ -1,0 +1,23 @@
+body {
+  background-color: lightgray;
+}
+
+h1, h2 {
+  border-style:dashed;
+  border-width: 1px;
+  color: brown;
+}
+
+.mainimage {
+  border: 5px solid black;
+}
+
+.mainlink {
+  color: #FF3300;
+}
+
+.footer {
+  font-style: italic;
+  font-weight: bold;
+
+}
