@@ -1,0 +1,15 @@
+
+  h1,
+  nav,
+  footer {
+    color: #EFECCA;
+    background-color: #002F2F;
+  }
+
+  a {
+    color: #EFECCA;
+  }
+
+#current a {
+  background-color: #046380;
+}
