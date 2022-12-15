@@ -1,0 +1,33 @@
+a {
+  color: #B64926;
+}
+
+nav {
+  color: #B64926;
+  background-color: #FFF0A5;
+}
+
+h1, #content  h2{
+    background-color: #FFB03B;
+  }
+
+/*  Adjacent sibling selector + */
+header + p {
+  color: #468966;
+}
+
+section header{
+  color:#8E2800;
+}
+
+footer a {
+  color: #B64926;
+}
+
+section footer {
+  background-color: #F5F5F5;
+}
+
+footer {
+  background-color: #DDDDDD;
+}
