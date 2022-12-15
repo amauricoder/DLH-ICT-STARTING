@@ -1,5 +1,7 @@
 body {
 	background-color: #333;
+	background-image: url("/home/student/www/K/sep09.jpg");
+	background-size: cover;
 }
 
 #wrapper {
