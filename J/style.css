@@ -1,3 +1,6 @@
+#current {
+  background-color: #046380;
+}
 
   h1,
   nav,
@@ -6,10 +9,40 @@
     background-color: #002F2F;
   }
 
+
   a {
     color: #EFECCA;
   }
 
-#current a {
+nav a:hover {
   background-color: #046380;
+}
+
+blockquote:hover {
+  background-color: #002F2F;
+  color: #EFECCA;
+}
+
+article:nth-of-type(2){
+  background-color: #fcf9d5;
+}
+
+article:nth-of-type(3){
+  background-color: #efecca;
+}
+
+article:nth-of-type(4){
+  background-color: #d6d3b4;
+}
+
+p:first-child {
+  color: #046380;
+}
+
+blockquote {
+  background-color: #FFFCEA;
+}
+
+#content:first-child {
+  background-color: #E6E2AF;
 }
