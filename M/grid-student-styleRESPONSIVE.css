@@ -1,0 +1,31 @@
+
+.grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 120px 80px auto  80px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; /* or grid-gap for column+row */
+        text-align: left;
+      }
+      .grid-item {
+        background-color: lightgray;
+        border: 1px solid black;
+        font-size: 30px;
+      }
+      .grid-header, .grid-navigation, .grid-footer{
+        grid-column: 1 / span 2;
+        text-align: center;
+      }
+      .grid-navigation ul{
+        padding-inline-start:0;
+      }
+      .grid-navigation ul li{
+        display: inline-block;
+      }
+      .grid-navigation ul li a{
+        text-decoration: none;
+        color: inherit;
+      }
+      main{
+        padding: 20px;
+      }
