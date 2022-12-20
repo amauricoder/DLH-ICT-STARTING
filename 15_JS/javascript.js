@@ -1,6 +1,6 @@
 //first part of exercice - check the information
-function checkFilled(){
 
+function checkFilled(){
   var studentName = document.getElementById("studentName").value;
   var grade = document.getElementById("grade").value;
   var genrer = document.getElementById("genrerCheckBox").checked;
@@ -21,9 +21,29 @@ function checkFilled(){
     alert("The grade must have just numbers");
   }
 
-
+/*
   console.log(studentName);
   console.log(grade);
   console.log(genrer);
+  */
+}
+
+
+//create a new function to add the information at the list
+function addDataToList() {
+  var studentNameData = document.getElementById("studentName").value;
+  var gradeData = document.getElementById("grade").value;
+  var genrerData = document.getElementById("genrerCheckBox").checked;
+
+  //add itens to the list
+  //create a new variable -listElement- and make it search for the list with id #list in html.
+  var listElement = document.getElementById("list");
+  //creates a variable -listItem- and makes it create a new element with .createElement("li").
+  var listItem = document.createElement("li");
+  //modify the html with InnerHTML and gave it the information of studentNameData;
+  listItem.innerHTML = studentNameData;
+  //add the listItem to children of listElement;
+  listElement.appendChild(listItem);
+
 
 }
