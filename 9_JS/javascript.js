@@ -1,7 +1,4 @@
-function defaultBlue(){
-  document.getElementById("image1").style.background="blue";
-  console.log(defaultBlue)
-}
+
 
 function clicked1(){
   document.getElementById("image1").style.background="blue";
@@ -31,4 +28,5 @@ var email = document.getElementById("email").value;
 console.log(buttonOnClick);
 
 document.getElementById("output").innerHTML = "Hi, "+name+"! An invoice of "+price+" EUROS will be send to "+email+". Thank you for your order!";
+document.getElementById("output").style.color ="green";
 }

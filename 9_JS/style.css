@@ -8,9 +8,16 @@ border: 1px solid black;
 background: white;
 }
 
+
 img:hover{
   height: 8%;
   width: 8%;
   border: 2px solid black;
   cursor: pointer;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  font-weight: bold;
 }
