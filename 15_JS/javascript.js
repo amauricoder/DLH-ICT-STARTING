@@ -51,10 +51,12 @@ function addDataToList() {
   */
   var genrer;
   if(gradeGenrerData == true){
-    genrer = "masculine";
-  }
+    genrer = "<img src='/home/student/www/15_JS/m.png' width='30px' height='35px'>";
+
+   }
+
   else {
-    genrer = "feminine";
+    genrer = "<img src='/home/student/www/15_JS/w.png' width='20px' height='35px'>";
   }
 
 
@@ -67,7 +69,7 @@ function addDataToList() {
   var listItem = document.createElement("li");
 
   //modify the html with InnerHTML and gave it the information of studentNameData;
-  listItem.innerHTML = studentNameData+" ("+gradeData+")";
+  listItem.innerHTML = studentNameData+" ("+gradeData+")" +genrer;
   //add the listItem to children of listElement;
   listElement.appendChild(listItem);
 
