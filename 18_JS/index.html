@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>exercice 2 worksheet 4</title>
+    <script type="text/javascript" src="/home/student/www/18_JS/javascript.js">
+    </script>
+  </head>
+  <body onload="preview();">
+    <label>Article:</label><br>
+    <select id="article" onchange="preview()">
+      <option value="apples">Apples</option>
+      <option value="gamingmouse">Gaming mouse</option>
+      <option value="keyboard">Gaming keyboard</option>
+      <option value="gow-ps4">PS4 – God of War</option>
+      <option value="monitor">4K 27in monitor</option>
+      <option value="orangejus">Orange jus</option>
+      <option value="paysafecard">10€ paysafecard</option>
+    </select><br>
+    <label>Preview:</label><div id="previewOutput"></div>
+    <br>
+    <label>Amount:</label><br>
+    <select id="amount">
+      <option value="1">X1</option>
+      <option value="2">X2</option>
+      <option value="3">X3</option>
+      <option value="4">X4</option>
+    </select><br>
+    <button type="button" onclick="order()">Order now</button>
+    <div id="divOutput"></div>
+  </body>
+</html>

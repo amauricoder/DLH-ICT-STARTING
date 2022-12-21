@@ -1,0 +1,28 @@
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+    border: 1px solid black;
+    max-width: 10em;
+    max-height: 10em;
+    line-height: 10px;
+    height: 10em;
+    width:  10em;
+}
+
+
+.CellData{
+  color:blue;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+
+}
+
+td:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
