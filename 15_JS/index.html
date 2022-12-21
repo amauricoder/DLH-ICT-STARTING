@@ -8,13 +8,14 @@
   </head>
   <body>
     <div class="wrapper">
+      <div id="errorOutput"></div>
       <label class="name">Student name:<br><input type="text" id="studentName"></label><br>
-      <label class="grade">Grade:<br><input type="text" id="grade"></label>
+      <label class="grade">Grade:<br><input type="text" id="grade"></label><br>
       <form>
         <input id="genrerCheckBox" type="radio" name="genrer" value="M"><label>Masculine</label>
         <input id="genrerCheckBox" type="radio" name="genrer" value="F"><label>Feminine</label>
       </form>
-      <button type="button" onclick="checkFilled(); addDataToList();">Add</button>
+      <button type="button" onclick="checkFilled()">Add</button>
       <div id="divOutput">
       </div>
       <ol id="list">

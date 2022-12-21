@@ -4,11 +4,16 @@
   display: inline-block;
 }
 
-.name, .grade {
+.name, .grade, {
   display: inline-block;
 }
 
 button {
   border: 3px solid black;
   border-radius: 5px;
+}
+
+#errorOutput {
+  color: red;
+  font-weight: bold;
 }
