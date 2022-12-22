@@ -19,8 +19,8 @@ function preview() {
   selectedIndex = document.getElementById("article").selectedIndex;
   var article = document.getElementById("article").options[selectedIndex].text;
 
-  var test = document.getElementById("article").value;
-  document.getElementById("previewOutput").innerHTML ="<img src='/home/student/www/18_JS/img/"+test+".jpg' height='30px' width='auto'>";
+  var previewImage = document.getElementById("article").value;
+  document.getElementById("previewOutput").innerHTML ="<img src='/home/student/www/18_JS/img/"+previewImage+".jpg' height='60px' width='auto'>";
 
 
   /*
