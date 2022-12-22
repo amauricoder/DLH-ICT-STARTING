@@ -5,16 +5,22 @@
     <title>exercice 2 worksheet 4</title>
     <script type="text/javascript" src="/home/student/www/18_JS/javascript.js">
     </script>
+    <style>
+    .invisible {
+      display: none;
+    }
+    </style>
   </head>
   <body onload="preview();">
     <label>Article:</label><br>
-    <select id="article" onchange="preview()">
+    <select id="article" onchange="preview()" multiple>
+      <option value="no-image" selected class="invisible"></option>
       <option value="apples">Apples</option>
       <option value="gamingmouse">Gaming mouse</option>
       <option value="keyboard">Gaming keyboard</option>
-      <option value="gow-ps4">PS4 – God of War</option>
-      <option value="monitor">4K 27in monitor</option>
-      <option value="orangejus">Orange jus</option>
+      <option value="gow-ps4" >PS4 – God of War</option>
+      <option value="monitor" >4K 27in monitor</option>
+      <option value="orangejus" >Orange jus</option>
       <option value="paysafecard">10€ paysafecard</option>
     </select><br>
     <label>Preview:</label><div id="previewOutput"></div><br>
