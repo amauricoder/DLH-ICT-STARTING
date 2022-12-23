@@ -1,16 +1,19 @@
 
-var player = "X"
+var player = "X";
 function playerChoise(){
-let choices = ['x', 'X', 'o', 'O'];
+  let choices = ["X", "O"];
+  let choice = prompt('Please chose between X or O:', choices.join('\n')).toUpperCase();
 
-let choice = prompt('Please select an option:', choices.join('\n'));
+  if (choices.includes(choice)) {
+    alert('You selected: ' + choice);
+  } else {
+      alert('please chose between X or O');
+    }
+    if (choice !== player){
+        player = "O";
+    }
+}
 
-if (choices.includes(choice)) {
-  alert('You selected: ' + choice);
-} else {
-  alert('please chose between X or O');
-}
-}
 
 function cellClicked(cell){
 
@@ -22,17 +25,20 @@ function cellClicked(cell){
       else {
           player ="X";
       }
+      checkWinner();
     }
   }
 
-/*
+function checkResult(cellDataId){
+  return document.getElementById(cellDataId).innerHTML;
+}
 
 function checkWinner(){
-  if (getCellData("Cell1Data") == getCellData("Cell2Data") && getCellData("Cell2Data") == getCellData("Cell3Data")) {
-    document.getElementById("cell1").style.backgroundColor ="green";
-    document.getElementById("cell2").style.backgroundColor ="green";
-    document.getElementById("cell3").style.backgroundColor ="green";
-  }
+  var line1 = checkResult("cellData1");
+  var line2 = checkResult("cellData2");
+  var line3 = checkResult("cellData3");
 
+  if(line1 == line2 && line1 == line3){
+    alert("you win");
+  }
 }
-*/
