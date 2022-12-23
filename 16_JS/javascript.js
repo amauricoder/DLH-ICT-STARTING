@@ -1,5 +1,6 @@
 
 var player = "X";
+
 function playerChoise(){
   let choices = ["X", "O"];
   let choice = prompt('Please chose between X or O:', choices.join('\n')).toUpperCase();
@@ -8,15 +9,14 @@ function playerChoise(){
     alert('You selected: ' + choice);
   } else {
       alert('please chose between X or O');
+      playerChoise();
     }
     if (choice !== player){
         player = "O";
     }
 }
 
-
 function cellClicked(cell){
-
   if(document.getElementById(cell).innerHTML == ""){
     document.getElementById(cell).innerHTML = player;
      if(player =="X"){
@@ -25,18 +25,18 @@ function cellClicked(cell){
       else {
           player ="X";
       }
-      checkWinner();
+      checkIfYouWin();
     }
   }
 
-function checkResult(cellDataId){
-  return document.getElementById(cellDataId).innerHTML;
-}
+function getCellData(cellDataId){
+    return document.getElementById(cellDataId).innerHTML;
+  }
 
-function checkWinner(){
-  var line1 = checkResult("cellData1");
-  var line2 = checkResult("cellData2");
-  var line3 = checkResult("cellData3");
+function checkIfYouWin(){
+  var line1 = getCellData("cell1Data");
+  var line2 = getCellData("cell2Data");
+  var line3 = getCellData("cell3Data");
 
   if(line1 == line2 && line1 == line3){
     alert("you win");

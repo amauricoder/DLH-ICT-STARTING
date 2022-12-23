@@ -1,4 +1,6 @@
-
+body {
+  background-color: #3399FF;
+}
 table, .button-wrapper {
   display: flex;
   justify-content: center;
@@ -13,6 +15,7 @@ td {
     line-height: 10px;
     height: 10em;
     width:  10em;
+    background-color: white;
 }
 
 
