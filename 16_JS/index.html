@@ -8,21 +8,22 @@
     </script>
   </head>
   <body>
-    <table cellspacing=0>
+    <div class="button-wrapper">
+    <table id="tableId" cellspacing=0 >
       <tr>
-        <td id="cell1" onclick="firstCellMovement()"><div class="CellData" id="firstCellData"></div></td>
-        <td id="cell2" onclick="secondCellMovement()"><div class="CellData" id="secondCellData"></div></td>
-        <td id="cell3" onclick="thirdCellMovement()"><div class="CellData" id="thirdCellData"></div></td>
+        <td id="cell1" onclick="cellClicked('cell1Data')"><div class="CellData" id="cell1Data"></div></td>
+        <td id="cell2" onclick="cellClicked('cell2Data')"><div class="CellData" id="cell2Data"></div></td>
+        <td id="cell3" onclick="cellClicked('cell3Data')"><div class="CellData" id="cell3Data"></div></td>
       </tr>
       <tr>
-        <td id="cell4" onclick="forthCellMovement()"><div class="CellData" id="fourthCellData"></div></td>
-        <td id="cell5" onclick="fivethCellMovement()"><div class="CellData" id="fivethCellData"></div></td>
-        <td id="cell6" onclick="sixthCellMovement()"><div class="CellData" id="sixthCellData"></div></td>
+        <td id="cell4" onclick="cellClicked('cell4Data')"><div class="CellData" id="cell4Data"></div></td>
+        <td id="cell5" onclick="cellClicked('cell5Data')"><div class="CellData" id="cell5Data"></div></td>
+        <td id="cell6" onclick="cellClicked('cell6Data')"><div class="CellData" id="cell6Data"></div></td>
       </tr>
       <tr>
-        <td id="cell7" onclick="seventhCellMovement()"><div class="CellData" id="seventhCellData"></div></td>
-        <td id="cell8" onclick="eightCellMovement()"><div class="CellData" id="eightCellData"></div></td>
-        <td id="cell9" onclick="ninethCellMovement()"><div class="CellData" id="ninethCellData"></div></td>
+        <td id="cell7" onclick="cellClicked('cell7Data')"><div class="CellData" id="cell7Data"></div></td>
+        <td id="cell8" onclick="cellClicked('cell8Data')"><div class="CellData" id="cell8Data"></div></td>
+        <td id="cell9" onclick="cellClicked('cell9Data')"><div class="CellData" id="cell9Data"></div></td>
       </tr>
     </table>
   </body>

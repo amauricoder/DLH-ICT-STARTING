@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice looping worksheet A </title>
+    <script type="text/javascript" src="/home/student/www/21_JS/javascript.js"></script>
+    <style media="screen">
+    #articlesList {
+      width: 200px;
+    }
+
+    #errorOutput {
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <label>Article:</label>
+    <input type="text" id="article"><br>
+    <button type="button" name="button" onclick="addClicked()">Add</button><br>
+
+    <label>List of articles:</label><br>
+    <select id="articlesList" multiple ></select>
+    <ol id="listOutput"></ol>
+    <button type="button" onclick="showAllClicked()">Show all itens</button>
+  </body>
+</html>
